@@ -1,0 +1,3 @@
+dir
+cd C:\Users\Gaaby Castell\Documents\Finanzas Python
+git init
