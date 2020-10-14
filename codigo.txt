@@ -1,3 +1,20 @@
+# Abrimos la consola de windos para obtener nuestro repositorio
 dir
 cd C:\Users\Gaaby Castell\Documents\Finanzas Python
 git init
+git add codigo.txt
+git commit -m "Agregue archivo con codigo classe"
+# nos arrojo un error ya que no teníamos direccionado ningun repositorio en linea para actualizar, tuvimos que crear uno en nuestra cuenta de github
+# definimos que usuario somos
+git config --global user.name "gaabycastell"
+git config --global user.email "gaabycastell@ciencias.unam.mx"
+
+# Este codigo lo tomamos del repositorio
+git remote add origin https://github.com/gaabycastell/Finanzas-Python.git
+git push --set-upstream origin master
+# actualizamos el repositorio y ya tenemos ahí el archivo
+
+# Ramas subconjuntos del código que podemos utilizar para no afectar todo el código
+# nos movemos a una rama
+git checkout -b testing
+# guardamos el archivo actual para guardar estos cambios solo en la rama
